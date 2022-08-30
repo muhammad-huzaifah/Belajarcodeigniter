@@ -15,7 +15,7 @@
 			echo "<hr>";
 		}
 	?>
-	<form method="post" enctype="multipart/form-data" action="<?php echo base_url(); ?>index.php/upload/proses">
+	<form method="post" enctype="multipart/form-data" action="<?php echo base_url(); ?>index.php/uploadmultiple/proses">
 		<div>Berkas 1:</div>
 		<div><input type="file" name="berkas[]"></div>
 		<div>Keterangan 1:</div>
