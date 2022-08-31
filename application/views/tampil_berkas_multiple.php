@@ -12,7 +12,8 @@
 	<hr>
 	<a href="<?php echo base_url(); ?>index.php/uploadmultiple/create">Tambah Berkas</a>
 	<hr>
-	<table  border="1" width="75%" style="text-align:center;">
+<!--	<table   border="1" width="75%" style="text-align:center; ">-->
+	<table style="table, th, td solid{border: 1px solid}; text-align:center; border-style: solid; border-width: 1px; width: 75% ">
 		<tr>
 			<th>No</th>
 			<th>Image</th>
@@ -26,7 +27,7 @@
 				?>
 				<tr>
 					<td><?php echo  $no++; ?></td>
-					<td><img src="<?php echo base_url(); ?>upload/ <?php echo $row->nama_berkas; ?>"/>
+					<td><img width="100" src="<?php echo base_url(); ?>upload/<?php echo $row->nama_berkas; ?>"/>
 					</td>
 					<td><?php echo $row->keterangan_berkas; ?></td>
 					<td><a href="<?php echo base_url(); ?>index.php/upload/download/<?php echo $row->kd_berkas; ?>">Download</a></td>
