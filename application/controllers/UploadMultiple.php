@@ -48,7 +48,7 @@ class UploadMultiple extends CI_Controller
 
 	function download($id)
 	{
-		$data = $this->db->get_where('tb_berkas',['kd_berkas'=>$id]->row());
-		force_download('upload/'.$data->nama_berkas, 'berkas');
+		$data = $this->db->get_where('tb_berkas',['kd_berkas'=>$id])->row();
+		force_download('upload/'.$data->nama_berkas, 'berkas', NULL);
 	}
 }
